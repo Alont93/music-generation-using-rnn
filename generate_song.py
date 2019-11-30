@@ -7,7 +7,7 @@ char_to_idx, idx_to_char = char_mapping()
 
 config = {
     "VOCAB_SIZE": len(char_to_idx.keys()),
-    "HIDDEN": 100,
+    "HIDDEN": 200,
 
     # For songs sampling
     "TEMPERATURE": 1,
@@ -15,10 +15,10 @@ config = {
     "LIMIT_LEN": 300
 }
 
-MODEL_INPUT = "$\nX:3"
+MODEL_INPUT = "$"
 # MODEL_INPUT = "$"
 model = LSTMSimple(config["VOCAB_SIZE"], config["HIDDEN"], config["VOCAB_SIZE"]).to(get_device())
 model.init_state()
-model.load_state_dict(torch.load("trained_models/model2019-11-26-00-41.pth", map_location='cpu'))
+model.load_state_dict(torch.load("trained_models/model2019-11-26-03-06.pth", map_location='cpu'))
 text = sample(model, MODEL_INPUT, config)
 print(text)
