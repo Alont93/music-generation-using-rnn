@@ -1,5 +1,14 @@
-# Deep-Learning-Assignment-4
-Recurrent Neural Networks for music generation.
+# music-generation-rnn
+Songs generator using LSTM and Vanila Recurrent Neural Networks with PyTorch.
+
+Using a dataset of songs, this report will present one possible solution to build a predictor using different RNN architectures.
+
+This project includes:
+* Songs dataset encoding.
+* LSTM and Vanilla models implemented with PyTorch.
+* Dropouts Layer and Hyper-Parameters configurations.
+* Song Generation Class to use the trained model to create new, dataset silimar, songs.
+* Hidden neurons visualized weights.
 
 ## Setup
 Install the dependencies in the requirements.txt file.
