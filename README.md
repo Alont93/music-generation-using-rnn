@@ -1,13 +1,13 @@
 # music-generation-rnn
 Songs generator using LSTM and Vanila Recurrent Neural Networks with PyTorch.
 
-Using a dataset of songs, this report will present one possible solution to build a predictor using different RNN architectures.
+Using a dataset of songs, this project will present solution for building a predictor using different RNN architectures.
 
 This project includes:
 * Songs dataset encoding.
 * LSTM and Vanilla models implemented with PyTorch.
 * Dropouts Layer and Hyper-Parameters configurations.
-* Song Generation Class to use the trained model to create new, dataset silimar, songs.
+* Song Generation class to use the trained model to create new dataset-similar songs.
 * Hidden neurons visualized weights.
 
 ## Setup
